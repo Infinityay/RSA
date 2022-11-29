@@ -17,3 +17,7 @@
 ##  **Announcement:**
 
 > This GUI evolved from [Wanderson-Magalhaes/Simple_PySide_Base](https://github.com/Wanderson-Magalhaes/Simple_PySide_Base)
+
+## More details:
+
+[RSA&Signature (shimo.im)](https://shimo.im/docs/rp3OVdRdRyF0abAm)
