@@ -1369,6 +1369,14 @@ class Ui_MainWindow(object):
         self.label_12 = QLabel(self.page_home)
         self.label_12.setObjectName(u"label_12")
         self.label_12.setFont(font10)
+        urlDisplay = "urlAddressDisPlay";
+        urlStyle = "<a href=www.baidu.com style=\"color:red;text-decoration:none;\">";
+        self.label_12.setText('More details: '
+                              '<a href="https://github.com/Infinityay/RSA">'
+                              'RSA</a>')
+        self.label_12.setOpenExternalLinks(True)
+        self.label_12.setTextInteractionFlags(Qt.LinksAccessibleByMouse)
+
         self.label_12.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_6.addWidget(self.label_12)
@@ -1908,7 +1916,7 @@ class Ui_MainWindow(object):
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Welcome", None))
         self.label_6.setText(
             QCoreApplication.translate("MainWindow", u"Just click left menu and start RSA experiment!", None))
-        self.label_12.setText(QCoreApplication.translate("MainWindow", u"Click me to get more details", None))
+
         self.label_16.setText(QCoreApplication.translate("MainWindow", u"Sender", None))
         self.label_13.setText(QCoreApplication.translate("MainWindow", u"Step 1: Message Digest ", None))
         self.plainTextEdit_12.setPlainText("")
