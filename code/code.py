@@ -43,12 +43,12 @@ def exgcd(a, b):
     return x, y
 
 
-# 生成密钥e,d
 def get_e_d(phi):
+    # 生成密钥e,d
     e = gmpy2.mpz_random(rs, phi)  # 随机生成比r小的正整数
     while gmpy2.gcd(e, phi) != 1:  # 判断两个数是否互质
         e = gmpy2.mpz_random(rs, phi)  # 随机生成一个0~phi的,与phi互素的数
-    d, k = exgcd(e, phi)
+    d = gmpy2.invert(e, phi)
 
     # d = gmpy2.invert(e, phi)
     # print(d)# 生成d
@@ -63,8 +63,8 @@ def encrypt(plain_text, e, n):
     return cipher_text
 
 
-# rsa解密
 def decrypt(cipher_text, d, n):
+    # rsa解密
     m = gmpy2.powmod(cipher_text, d, n)
     plain_text = binascii.unhexlify(format(m, 'x')).decode('utf-8')
     return plain_text
