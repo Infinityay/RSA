@@ -28,15 +28,15 @@ You have **two choice**:
 
 2. input the two primes **by hand:**
 
-   ![image-20221130180156546](README/image-20221130180156546.png)
+   ![加载失败](README/image-20221130180156546.png)
 
    :bangbang: If you choose this way, ensure that the two numbers are primes and $n = p \times q > length(encode(plainText))$, if not, you will get some errors like
 
-   ![image-20221130180404284](README/image-20221130180404284.png)
+   ![加载失败](README/image-20221130180404284.png)
 
-   ![image-20221130180423220](README/image-20221130180423220.png)
+   ![加载失败](README/image-20221130180423220.png)
 
-   ![image-20221130180431747](README/image-20221130180431747.png)
+   ![加载失败](README/image-20221130180431747.png)
 
 ### Step 3	Key length
 
