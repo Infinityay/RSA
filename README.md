@@ -22,7 +22,7 @@ Then the program will encode it by UTF-8 as:
 
 You have **two choice**:
 
-1. Generate the two primes with **RSA-2048 **:star:(recommened):
+1. Generate the two primes with **RSA-2048**:star:(recommened):
 
 ![image-20221130175043997](README/image-20221130175043997.png)
 
